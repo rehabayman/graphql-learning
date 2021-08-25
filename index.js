@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const { graphqlHTTP } = require('express-graphql');
 const {
@@ -9,7 +10,7 @@ const {
     GraphQLNonNull
 } = require('graphql');
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5500;
 const {
     authors,
     books
