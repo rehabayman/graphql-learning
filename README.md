@@ -4,4 +4,5 @@ This personal mini-project is for learning GraphQL fundamentals by building a no
 
 ### Tools Used:
     1. express - for building the nodejs server
-    2. express-graphql and graphql - for using GraphQL tools
+    2. graphql - for using GraphQL object types and schema
+    3. graphql-express - for initiating the graphql http
