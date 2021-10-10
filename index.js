@@ -1,4 +1,5 @@
 require('dotenv').config();
+const db = require('./database/db');
 const express = require('express');
 const { graphqlHTTP } = require('express-graphql');
 const {
@@ -11,6 +12,7 @@ const {
 } = require('graphql');
 const app = express();
 const PORT = process.env.PORT || 5500;
+db.connect();
 const {
     authors,
     books
